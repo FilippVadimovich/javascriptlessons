@@ -1,0 +1,242 @@
+html,
+body {
+    width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@font-face {}
+
+.main_header {
+    width: 100%;
+    background: url(../img/header.jpg) #454340 no-repeat;
+    
+}
+
+.logo_menu {}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 181px;
+    text-decoration: none;
+}
+
+.logo_svg {
+    fill: #ffffff;
+}
+
+.logo:hover .logo_svg {
+    fill: #434240;
+    stroke: #fff;
+}
+
+.logo:hover .logo_txt {
+    color: #434240;
+}
+
+.logo:active .logo_svg {
+    fill: #c7b299;
+
+}
+
+.logo:active .logo_txt {
+    color: #c7b299;
+}
+
+.logo .logo_txt {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 34px;
+}
+
+.logo_menu {
+    margin: 0 auto;
+    width: 1170px;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    margin-left: 219px;
+}
+
+.menu li {
+    float: left;
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    color: #c7b29a;
+}
+
+.search_icon {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    background: url(../img/icon-search.png) no-repeat;
+    background-size: contain;
+    border: 1px solid gray;
+}
+
+.search_icon:focus {
+    width: 150px;
+    transition: width 1s ease-out;
+    background-position: right;
+}
+
+.slider_arrow {
+    display: block;
+    width: 40px;
+    height: 73px;
+    position: relative;
+    
+}
+
+.slider_arrow:after {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(-135deg);
+    position: absolute;
+    top: 431px;
+    left: 150px;
+}
+
+.slider_arrow:hover:after {
+    border-top: 2px solid #766b69;
+    border-right: 2px solid #766b69;
+}
+
+.slider_arrow_another {
+    display: block;
+    width: 40px;
+    height: 73px;
+    position: relative;
+  
+}
+
+.slider_arrow_another:after {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 379px;
+    left: 1730px;
+}
+
+.slider_arrow_another:hover:after {
+    border-top: 2px solid #766b69;
+    border-right: 2px solid #766b69;
+}
+
+.slider_content {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 154px auto 0;
+}
+
+.slider_heading {
+    display: block;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.slider_heading_two {
+    display: block;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    margin: 14px 0 19px 0;
+}
+
+.slider_txt {
+    width: 562px;
+    display: block;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+.get_button {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 170px;
+    height: 53px;
+    border-radius: 3px;
+    background-color: #998675;
+    color: #ffffff;
+    border-bottom: 3px solid #736356;
+    margin-top: 52px;
+}
+.get_button:hover {
+     background-color:#736356;
+     border-bottom: 3px solid #998675;
+   }
+.get_button:active {
+   opacity: 0.5;
+}
+.get_button_txt {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    margin: auto;
+}
+.dots_nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 329px;
+    padding-bottom: 42px;
+}
+.dots_nav .dots {
+    margin: 0 5px;
+	background-color: #8f9091;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+}
+.dots:hover {
+  	width: 15px;
+	height: 15px;
+	margin: -3px 3px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 2px solid #d3c1ad;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+}
