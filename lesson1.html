@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<script>
+    var n = prompt("Ваше имя: ");
+    console.log("Привет, " + n + "!" + "Это моё первое ДЗ на курсе JavaScript");
+    var a = parseInt(prompt("Введите температуру в градусах по Цельсию:  "));
+    console.log("Вы ввели " + a + " tC");
+    if (isNaN(a)) {
+        console.log("Нужно было ввести число")
+    } else {
+        console.log("Теперь переведем значение в Фаренгейты");
+        console.log("Температура по Фаренгейту равно:  " + ((9 / 5) * a + 32) + " tF");
+    }
+
+    console.log("Второе задание");
+    let admin = prompt("Введите имя админа");
+    let name = prompt("Введите имя пользователя");
+    console.log("Имя админа - " + (admin = name));
+    console.log("Ответ на третье задание: 1000108");
+
+</script>
