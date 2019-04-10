@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework Les 3</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation_panel">
+            <ul>
+                <li><a class="nav_link" href="index.html">Главная</a></li>
+                <li><a class="nav_link" href="les_1.html">Урок 1</a></li>
+                <li><a class="nav_link" href="les_2.html">Урок 2</a></li>
+                <li><a class="nav_link" href="les_3.html">Урок 3</a></li>
+                <li><a class="nav_link" href="les_4.html">Урок 4</a></li>
+                <li><a class="nav_link" href="les_5.html">Урок 5</a></li>
+                <li><a class="nav_link" href="les_6.html">Урок 6</a></li>
+                <li><a class="nav_link" href="les_7.html">Урок 7</a></li>
+                <li><a class="nav_link" href="les_8.html">Урок 8</a></li>
+            </ul>
+        </div>
+        <div class="lessons_header">
+            <h3>Домашняя работа к уроку 3 курса JS уровень 1</h3>
+        </div>
+        <div class="first_practice">
+            <h4 class="practice_heading">Первое задание</h4>
+            <p class="practice_task">С помощью цикла while вывести все простые числа в промежутке от 0 до 100</p>
+            <button onclick="simpleNumbers()" type="button" class="btn_perform">Выполнить</button>
+        </div>
+        <div class="second_practice">
+            <h4 class="practice_heading">Второе задание</h4>
+            <details>
+                <summary><span class="details_one">Товары в корзине хранятся в массиве. Задачи:</span>
+                </summary>
+                <ul>
+                    <li>a) Организовать такой массив для хранения товаров в корзине;</li>
+                    <li>b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.</li>
+                </ul>
+            </details>
+            <button type="button" class="btn_perform" onclick="goodsList()">Массив</button>
+            <button type="button" class="btn_perform" onclick="totalCost()">Стоимость</button>
+        </div>
+        <div class="third_practice">
+            <h4 class="practice_heading">Третье задание</h4>
+            <p class="practice_task">Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. </p>
+            <details>
+                <summary>
+                    <span class="details_one">Выглядеть это должно так:</span></summary>
+                <span class="details_two">for(…){// здесь пусто}</span>
+            </details>
+            <button type="button" class="btn_perform" onclick="counterToNine()">Выполнить</button>
+        </div>
+        <div class="fourth_practice">
+            <h4 class="practice_heading">Четвертое задание</h4>
+            <p class="practice_task">Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:</p>
+            <button type="button" class="btn_perform" onclick="generatePyramide()">Выполнить</button>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

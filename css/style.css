@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/montserrat/montserrat-regular.ttf");
+    src: url("../fonts/montserrat/montserrat-light.ttf");
+    src: url("../fonts/montserrat/montserrat-extralight.ttf");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/raleway/raleway-regular.ttf");
+    src: url("../fonts/raleway/raleway-medium.ttf");
+    src: url("../fonts/raleway/raleway-bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/roboto/roboto-regular.ttf");
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+
+}
+
+/*Навигационная панель*/
+.navigation_panel {
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.navigation_panel ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navigation_panel ul li {
+    width: 10%;
+}
+
+.nav_link {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 16px;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    outline: none;
+    border-radius: 1px;
+}
+
+.nav_link:hover {
+    background-image:
+        radial-gradient(1px 45% at 0% 50%, rgba(0, 0, 0, .6), transparent),
+        radial-gradient(1px 45% at 100% 50%, rgba(0, 0, 0, .6), transparent);
+}
+
+.nav_link:active {
+    background-image:
+        radial-gradient(45% 45% at 50% 100%, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0)),
+        linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .3));
+    box-shadow:
+        inset rgba(162, 95, 42, .4) 0 0 0 1px,
+        inset rgba(255, 255, 255, .9) 0 0 1px 3px;
+}
+
+.main_page_content .classss {
+    font-family: Roboto;
+    padding-top: 15px;
+    text-align: right;
+    font-size: 36px;
+    color: blue;
+}
+
+.main_page_content #mainheader_attention {
+    font-family: Roboto;
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.main_nav {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.main_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_nav ul li {
+    width: 50%;
+}
+
+.main_page_content {
+    background: url(../img/javascript_bg.png) no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+
+/*Кнопка переключения урока*/
+.lesson_link {
+    width: 50%;
+    text-align: center;
+    margin: 20px 0 0 20px;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid rgb(250, 172, 17);
+    border-radius: 7px;
+    background: rgb(255, 212, 3) linear-gradient(rgb(255, 212, 3), rgb(248, 157, 23));
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0);
+    transition: box-shadow .2s, border-color .2s;
+}
+
+.lesson_link:hover {
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, .5);
+}
+
+.lesson_link:active {
+    padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+    border-color: rgba(177, 159, 0, 1);
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 2px rgba(0, 0, 0, .3), inset 0 0 0 60px rgba(255, 255, 0, .45);
+}
+
+
+/*Стили для страниц с уроками*/
+
+.practice_heading {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 22px;
+    color: dimgray;
+}
+
+.practice_task {
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.btn_perform {
+    position: relative;
+    display: inline-block;
+    color: #777674;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255, 255, 255, .5) 1px 1px, rgba(100, 100, 100, .3) 3px 7px 3px;
+    user-select: none;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image:
+        linear-gradient(45deg, rgba(255, 255, 255, .0) 30%, rgba(255, 255, 255, .8), rgba(255, 255, 255, .0) 70%),
+        linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, .3)),
+        linear-gradient(to right, rgba(125, 125, 125, 1), rgba(255, 255, 255, .9) 45%, rgba(125, 125, 125, .5)),
+        linear-gradient(to right, rgba(125, 125, 125, 1), rgba(255, 255, 255, .9) 45%, rgba(125, 125, 125, .5)),
+        linear-gradient(to right, rgba(223, 190, 170, 1), rgba(255, 255, 255, .9) 45%, rgba(223, 190, 170, .5)),
+        linear-gradient(to right, rgba(223, 190, 170, 1), rgba(255, 255, 255, .9) 45%, rgba(223, 190, 170, .5));
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0, 0, 0, .5) 3px 10px 10px -10px;
+    margin-top: 20px;
+    width: 20%;
+    line-height: 24px;
+}
+
+.btn_perform:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+
+.btn_perform:active {
+    top: 1px;
+}
+
+/*Стили для страницы урока 3*/
+details {
+    margin-top: 10px;
+}
+
+.details_one {
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.details_two {
+    font-family: Roboto;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+details ul li {
+    font-family: Roboto;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+/* Стли для страницы урока 4 */
+#numb {
+    width: 300px;
+    line-height: 52px;
+    background-color: #C0C0C0;
+    box-shadow: rgba(0, 0, 0, .5) 3px 10px 10px -10px;
+}
+
+#numb:focus {
+    background-color: #AFEEEE;
+}
